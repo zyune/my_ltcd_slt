@@ -14,6 +14,7 @@ class Solution(object):
                 number = number + dict[ss[i]]
         print(number)
         return number
+    
 # s="CMXCIX"
 # ss = list(s)
 # #print(ss.pop())
