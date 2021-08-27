@@ -41,3 +41,6 @@ Output: [0,1]
                 
 a = Solution()
 a.cccc([2,7,11,15], 26)
+
+
+
