@@ -32,7 +32,8 @@ class Solution(object):
 #         number = number + dict[ss[i]]
 # #print(number)
         
-
+for item in range:
+     print(item)
 
 
         
@@ -42,6 +43,7 @@ class Solution(object):
 
  
     
+
 
 
 
