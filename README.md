@@ -8,3 +8,18 @@ https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/description
 #核心方法是使用快慢指针
 https://leetcode-cn.com/problems/roman-to-integer/
 <img width="707" alt="Screen Shot 2021-08-28 at 12 42 16 AM" src="https://user-images.githubusercontent.com/66234261/131160845-44d8f836-f89e-475c-8a9c-ef03d2dac1db.png">
+
+2021 Aug 31th
+so the key thing about memorization in dynamic programming is that we need to follow the following steps 
+#1. make it work  // this step is the hard part
+#   visualize the problem as a tree 
+#   implement the tree using recursion
+#       base case
+#       (memorization) not necessary in this step
+#
+#   test it
+# 
+# 2. make it efficient // this step is much easy 
+#   add a memo object
+#   add a base case to return memo value
+#   store return value into the memo object
