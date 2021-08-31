@@ -21,7 +21,7 @@ print(grid_travel_memo(4,5))
 
 ## memorization recipe
 #stick to high level solutions 
-# stay methodical to the following step and follow these steps 
+# stay methodical to the following step and follow these
 
 #1. make it work  // this step is the hard part
 #   visualize the problem as a tree 
