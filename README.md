@@ -11,15 +11,15 @@ https://leetcode-cn.com/problems/roman-to-integer/
 
 2021 Aug 31th
 so the key thing about memorization in dynamic programming is that we need to follow the following steps 
-#1. make it work  // this step is the hard part
-#   visualize the problem as a tree 
-#   implement the tree using recursion
-#       base case
-#       (memorization) not necessary in this step
-#
-#   test it
-# 
-# 2. make it efficient // this step is much easy 
-#   add a memo object
-#   add a base case to return memo value
-#   store return value into the memo object
+1. make it work  // this step is the hard part
+   visualize the problem as a tree 
+   implement the tree using recursion
+       base case
+       (memorization) not necessary in this step
+
+   test it
+ 
+ 2. make it efficient // this step is much easy 
+   add a memo object
+   add a base case to return memo value
+   store return value into the memo object
