@@ -4,13 +4,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n=int(len(nums)/2)
-        dict={}
+        n = int(len(nums)/2)
+        dict = {}
         for i in nums:
             if i in dict:
-                dict[i]=dict[i]+1
+                dict[i] = dict[i] + 1
             else:
-                dict[i]=1
+                dict[i] = 1
         for i in dict:
             if dict[i] > n:
                 return i
