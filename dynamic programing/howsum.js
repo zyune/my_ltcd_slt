@@ -1,7 +1,7 @@
-const howsum = (targetSum, number) => {
+const howsum = (targetSum, numbers) => {
     if (targetSum === 0) return [];
     if (targetSum < 0) return null;
-    if (let num of numbers) {
+    for (let num in numbers) {
         const remainder = targetSum - num;
         const remainderResult = howsum(remainder, numbers)
         if (remainderResult!=null) {

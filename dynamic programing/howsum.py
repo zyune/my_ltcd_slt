@@ -22,7 +22,6 @@ def cansum(targetsum, numbers):
 
 
 def cansumfindfalse(targetsum, numbers, memo={}):
-    # minnum = min(numbers)
     if targetsum in memo:
         return memo[targetsum]
     if targetsum == 0:
@@ -32,9 +31,13 @@ def cansumfindfalse(targetsum, numbers, memo={}):
     for num in numbers:
         remainder = targetsum - num
         remainderresult = cansumfindfalse(remainder, numbers, memo)
+        # if remainderresult != None:
+        #     remainderresult.append(num)
+        #     return remainderresult
         if remainderresult != None:
             remainderresult.append(num)
-            return remainderresult
+            memo[targetsum] = remainderresult
+            return memo[targetsum]
     memo[targetsum] = None
     return None
 
