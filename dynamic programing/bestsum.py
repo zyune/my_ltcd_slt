@@ -17,14 +17,18 @@ def bestSum(targetSum, numbers, memo={}):
             if shortestCombination == None or len(combination) < len(shortestCombination):
                 shortestCombination = combination
 
+    # print("current num is ", print(
+    #     "currentshortest combination is ", num))
+    # print("currentshortest combination is ", shortestCombination)
     memo[targetSum] = shortestCombination
-    return shortestCombination
+
+    return memo[targetSum]
     #print("memo is",memo[targetSum])
     # print(shortestCombination)
 
 
 # print(bestSum(0, []))
-# print(bestSum(8, [1, 4, 5]))
+print(bestSum(10, [2, 3, 5]))
 
 
-print(bestSum(100, [10, 2, 5, 25]))
+# print(bestSum(100, [10, 2, 5, 25]))

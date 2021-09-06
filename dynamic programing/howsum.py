@@ -42,8 +42,8 @@ def cansumfindfalse(targetsum, numbers, memo={}):
     return None
 
 
-print(cansumfindfalse(8, [2, 3, 5]))
-print(cansumfindfalse(7, [2, 3]))
-print(cansumfindfalse(7, [5, 4, 3, 7]))
+# print(cansumfindfalse(8, [2, 3, 5]))
+# print(cansumfindfalse(7, [2, 3]))
+# print(cansumfindfalse(7, [5, 4, 3, 7]))
 print(cansumfindfalse(7, [2, 4]))
-print(cansumfindfalse(300, [7, 14]))
+# print(cansumfindfalse(300, [7, 14]))
