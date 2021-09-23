@@ -26,9 +26,16 @@ so the key thing about memorization in dynamic programming is that we need to fo
 
 2021 September 22th
   Tabulation recipe
+  
     visualize the problem as a table
+    
     size the table based on the input
+    
     initiate the table with default value
+    
     seed the trival answer into the table
+    
     iterate through the table
+    
     fill further positions based on the current position
+    
