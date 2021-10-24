@@ -6,6 +6,7 @@ def canConstructTable(str, wordbank):
         # print(i)
         if table[i] == True:
             for word in wordbank:
+                # 这一步才是关键 这个在一个string中slice一个片段的方法 很精妙
                 if str[i:i+len(word)] and word == str[i:i+len(word)]:
                     table[i+len(word)] = True
 
