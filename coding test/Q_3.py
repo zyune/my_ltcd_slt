@@ -21,3 +21,7 @@ def plot_with_pandas():
     plt.bar(x + width, bd, width=width, label='bill_depths')
     plt.legend()
     plt.show()
+# since I didn't receive an email telling me which github address to push to, I wrote my git commend here
+# pull request: git add /Users/mac/my_ltcd_slt/coding test/Q_3.py
+# git commit -m "my solution to Q3"
+# git push <remote> <branch>
