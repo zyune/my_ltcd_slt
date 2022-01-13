@@ -37,8 +37,8 @@ def q2_plot(column1, column2, filename):
     ax = plt.gca()
     ax.set_ylabel("y_label")
     ax.set_xlabel("x_label")
-    plt.bar(x, bill_lengths,  width=width, label='bill_lengths')
-    plt.bar(x + width, bill_depths, width=width, label='bill_depths')
+    plt.bar(x, bill_lengths,  width=width, label=column1)
+    plt.bar(x + width, bill_depths, width=width, label=column2)
     plt.legend()
     plt.show()
 
