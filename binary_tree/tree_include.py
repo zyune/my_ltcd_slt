@@ -98,4 +98,3 @@ c.right = f
 # d   e     f
 
 print(tree_includes(a, "n"))  # -> False
-

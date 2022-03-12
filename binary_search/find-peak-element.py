@@ -1,5 +1,5 @@
 class Solution(object):
-    def findPeakElement(self, nums):
+    def findPeakElement_iteration(self, nums):
         """
         :type nums: List[int]
         :rtype: int

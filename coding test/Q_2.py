@@ -6,6 +6,7 @@ import matplotlib
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import MultipleLocator
 
 
 def read_file(filename):
@@ -34,9 +35,9 @@ def q2_plot(column1, column2, filename):
     x = np.arange(size)
     total_width, n = 0.8, 2
     width = total_width / n
+    y_major_locator = MultipleLocator(10)
     ax = plt.gca()
-    ax.set_ylabel("y_label")
-    ax.set_xlabel("x_label")
+    ax.yaxis.set_major_locator(y_major_locator)
     plt.bar(x, bill_lengths,  width=width, label=column1)
     plt.bar(x + width, bill_depths, width=width, label=column2)
     plt.legend()

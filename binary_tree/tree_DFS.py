@@ -2,7 +2,7 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.left = None
-        self.right = None
+        self.right =None
 
 
 # this is a preorder DFS using a stack and will append right node in to stack first
