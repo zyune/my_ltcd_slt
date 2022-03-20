@@ -39,3 +39,17 @@ so the key thing about memorization in dynamic programming is that we need to fo
     
     fill further positions based on the current position
     
+#### binary search类型问题的 边界选择问题。强推 这篇 https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/
+
+> 二分查找重点概括
+写成 while(left < right) ，退出循环的时候有 left == right 成立，好处是：不用判断应该返回 left 还是 right；
+区间 [left..right] 划分只有以下两种情况：
+分成 [left..mid] 和 [mid + 1..right]，分别对应 right = mid 和 left = mid + 1；
+分成 [left..mid - 1] 和 [mid..right]，分别对应 right = mid - 1 和 left = mid，这种情况下。需要将 int mid = (left + right) / 2 改成 int mid = (left + right + 1) / 2，否则会出现死循环，这一点不用记，出现死循环的时候，把 left 和 right 的值打印出来看一下就很清楚了；
+退出循环 left == right，如果可以确定区间 [left..right] 一定有解，直接返回 left 就可以，否则还需要对 left 这个位置单独做一次判断；
+始终保持不变的是：在区间 [left..right] 里查找目标元素。
+
+作者：liweiwei1419
+链接：https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
